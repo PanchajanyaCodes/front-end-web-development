@@ -1,0 +1,343 @@
+/* || FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Dancing Script", cursive;
+}
+
+p,
+li {
+	font-family: "Montserrat", serif;
+}
+
+/* HEADER */
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #c6c7c4;
+	border-bottom: 2px solid black;
+	padding: 2rem;
+}
+
+.info {
+	width: 48%;
+	font-weight: 900;
+}
+
+.name {
+	font-size: 5rem;
+	margin-bottom: -0.1rem;
+}
+
+.job {
+	font-size: 3rem;
+}
+
+.description {
+	width: 60%;
+	font-size: 0.9rem;
+	font-weight: 500;
+	margin-top: 1rem;
+	margin-left: -0.01rem;
+}
+
+.profile {
+	width: 24rem;
+	height: 24rem;
+	border-radius: 50%;
+	margin: 1rem;
+}
+
+.img-container {
+	display: flex;
+	justify-content: center;
+}
+
+/* || MAIN */
+.main {
+	background-color: #a2999e;
+}
+
+.main h2 {
+	text-align: center;
+	font-size: 3.4rem;
+	font-weight: 900;
+	font-family: "Dancing Script", cursive;
+	padding-top: 3rem;
+}
+
+.skill {
+	font-family: "Montserrat", serif;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 5rem 0;
+}
+
+.skill-img {
+	width: 22rem;
+	height: 18rem;
+	margin-left: 10rem;
+	border: 10px solid #000;
+}
+
+.skill-heading {
+	width: 52%;
+	margin-left: 6rem;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.skill-para {
+	width: 50%;
+	margin-left: 6rem;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.underline {
+	width: 14%;
+	height: 1px;
+	border: none;
+	background-color: #000;
+	margin: auto;
+}
+
+.separator {
+	width: 50%;
+	height: 1px;
+	border: none;
+	background-color: #000;
+	margin: auto;
+}
+
+/* Get in Touch */
+.get-in-touch {
+	margin-top: 6rem;
+}
+
+.get-in-touch p {
+	width: 40%;
+	margin: 1rem auto;
+	font-weight: 500;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	border: none;
+	padding: 0.8rem 1.6rem;
+	background-color: #c6c7c4;
+	border-radius: 10px;
+	font-size: 0.9rem;
+	font-weight: 500;
+	margin-top: 0.4rem;
+	margin-bottom: 6rem;
+}
+
+button:hover,
+button:focus {
+	background-color: #353b3c;
+	color: #fff;
+	transition: 1s all;
+	cursor: pointer;
+	outline: none;
+}
+
+/* || FOOTER */
+.footer {
+	background-color: #c6c7c4;
+	border-top: 2px solid black;
+	display: grid;
+	place-items: center;
+	height: 10rem;
+}
+
+ul {
+	display: flex;
+	gap: 50px;
+	margin-bottom: -4rem;
+}
+
+li {
+	list-style: none;
+	font-weight: 500;
+}
+
+li:hover {
+	cursor: pointer;
+	color: #7e7f81;
+	transition: all 1s;
+}
+
+p {
+	margin: auto;
+	font-size: 0.9rem;
+}
+
+/* --------------------------------------- */
+
+/* || RESPONSIVE */
+/* Small Devices */
+@media (max-width: 576px) {
+	.header {
+		flex-direction: column;
+		height: auto;
+		padding: 1rem;
+	}
+
+	.info {
+		width: 90%;
+		text-align: center;
+	}
+
+	.name {
+		font-size: 3rem;
+	}
+
+	.job {
+		font-size: 2rem;
+	}
+
+	.description {
+		width: 90%;
+		font-size: 0.8rem;
+		margin-left: 4.4%;
+	}
+
+	.profile {
+		width: 20rem;
+		height: 20rem;
+	}
+
+	.main {
+		padding: 2rem 0;
+	}
+
+	.main h2 {
+		font-size: 2.5rem;
+	}
+
+	.skill {
+		flex-direction: column;
+		align-items: center;
+		margin: 2rem 0;
+	}
+
+	.skill-img {
+		width: 18rem;
+		height: 15rem;
+		margin-left: 0;
+	}
+
+	.skill-heading {
+		font-size: 1.5rem;
+		margin-left: 25%;
+		text-align: center;
+	}
+
+	.skill-para {
+		width: 50%;
+		margin-left: 25%;
+		margin-top: 1rem;
+		text-align: center;
+	}
+
+	.get-in-touch p {
+		width: 80%;
+		font-size: 0.8rem;
+	}
+}
+
+/* Medium Devices */
+@media (min-width: 577px) and (max-width: 768px) {
+	.header {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.info {
+		width: 80%;
+		text-align: center;
+	}
+
+	.name {
+		font-size: 4rem;
+	}
+
+	.job {
+		font-size: 2.5rem;
+	}
+
+	.description {
+		width: 80%;
+		font-size: 0.85rem;
+		margin-left: 10%;
+	}
+
+	.profile {
+		width: 22rem;
+		height: 22rem;
+	}
+
+	.main {
+		padding: 3rem 0;
+	}
+
+	.main h2 {
+		font-size: 3rem;
+	}
+
+	.skill {
+		flex-direction: column;
+		align-items: center;
+		margin: 3rem 0;
+	}
+
+	.skill-img {
+		width: 20rem;
+		height: 16rem;
+		margin-left: 0;
+	}
+
+	.skill-heading {
+		font-size: 1.75rem;
+		margin-left: 25%;
+		text-align: center;
+	}
+
+	.skill-para {
+		width: 50%;
+		margin-left: 25%;
+		margin-top: 1rem;
+		text-align: center;
+	}
+
+	.get-in-touch p {
+		width: 70%;
+		font-size: 0.85rem;
+	}
+}
