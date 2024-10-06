@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Adding JavaScript</title>
+		<style>
+			body {
+				text-align: center;
+				background-color: #111;
+				font-size: 2rem;
+				font-family: "cascadia code", monospace;
+				color: #fff;
+			}
+		</style>
+
+		<!-- Internal JavaScript -->
+		<script>
+			console.log("Internal JavaScript.");
+		</script>
+	</head>
+
+	<!-- Inline JavaScript -->
+	<body onload="console.log('Inline JavaScript');">
+		<h1>Hello World!</h1>
+
+		<!-- External JavaScript -->
+		<script src="01-adding-javascript.websites.js"></script>
+	</body>
+</html>
